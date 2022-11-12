@@ -1,29 +1,29 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(514,5): warning MSB8028: 中間ディレクトリ (obj\x64\Release\) に別のプロジェクト (MultiCam.vcxproj, Particles_MultiCam.vcxproj) と共有されているファイルが含まれています。これにより、クリーンしてリビルド動作が適切に行われない可能性があります。
-  MultiCam.vcxproj -> C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\MultiCam_T265.exe
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: 中間ディレクトリ (obj\x64\Release\) に別のプロジェクト (MultiCam.vcxproj, Particles_MultiCam.vcxproj) と共有されているファイルが含まれています。これにより、クリーンしてリビルド動作が適切に行われない可能性があります。
+  MultiCam.vcxproj -> C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\MultiCam_T265.exe
   
   	                   2	C:\of_v0.11.0_vs2017_release\libs\fmodex\lib\vs\x64\
-  	  *EXTRA File 		 1826304	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\fmod.dll
-  	  *EXTRA File 		 2041856	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\fmodL.dll
-  	  *EXTRA File 		  229376	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\freeglut.dll
-  	  *EXTRA File 		 6942208	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\FreeImage.dll
-  	  *EXTRA File 		  364032	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\glew32.dll
-  	  *EXTRA File 		   48640	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\glfw3.dll
-  	  *EXTRA File 		31955456	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\realsense2.dll
+  	  *EXTRA File 		 1826304	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\fmod.dll
+  	  *EXTRA File 		 2041856	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\fmodL.dll
+  	  *EXTRA File 		  229376	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\freeglut.dll
+  	  *EXTRA File 		 6942208	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\FreeImage.dll
+  	  *EXTRA File 		  364032	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\glew32.dll
+  	  *EXTRA File 		   48640	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\glfw3.dll
+  	  *EXTRA File 		31955456	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\realsense2.dll
   
   	                   1	C:\of_v0.11.0_vs2017_release\libs\FreeImage\lib\vs\x64\
-  	  *EXTRA File 		 1826304	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\fmod.dll
-  	  *EXTRA File 		 1503232	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\fmodex64.dll
-  	  *EXTRA File 		 1552384	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\fmodexL64.dll
-  	  *EXTRA File 		 2041856	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\fmodL.dll
-  	  *EXTRA File 		  229376	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\freeglut.dll
-  	  *EXTRA File 		  364032	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\glew32.dll
-  	  *EXTRA File 		   48640	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\glfw3.dll
-  	  *EXTRA File 		31955456	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\realsense2.dll
+  	  *EXTRA File 		 1826304	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\fmod.dll
+  	  *EXTRA File 		 1503232	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\fmodex64.dll
+  	  *EXTRA File 		 1552384	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\fmodexL64.dll
+  	  *EXTRA File 		 2041856	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\fmodL.dll
+  	  *EXTRA File 		  229376	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\freeglut.dll
+  	  *EXTRA File 		  364032	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\glew32.dll
+  	  *EXTRA File 		   48640	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\glfw3.dll
+  	  *EXTRA File 		31955456	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\realsense2.dll
   
   	                   3	C:\of_v0.11.0_vs2017_release\libs\openFrameworksCompiled\lib\vs\x64\
-  	  *EXTRA File 		 1826304	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\fmod.dll
-  	  *EXTRA File 		 1503232	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\fmodex64.dll
-  	  *EXTRA File 		 1552384	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\fmodexL64.dll
-  	  *EXTRA File 		 2041856	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\fmodL.dll
-  	  *EXTRA File 		 6942208	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\FreeImage.dll
-  	  *EXTRA File 		31955456	C:\of_v0.11.0_vs2017_release\apps\myApps\MultiCam_T265\bin\realsense2.dll
+  	  *EXTRA File 		 1826304	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\fmod.dll
+  	  *EXTRA File 		 1503232	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\fmodex64.dll
+  	  *EXTRA File 		 1552384	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\fmodexL64.dll
+  	  *EXTRA File 		 2041856	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\fmodL.dll
+  	  *EXTRA File 		 6942208	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\FreeImage.dll
+  	  *EXTRA File 		31955456	C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\realsense2.dll
