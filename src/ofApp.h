@@ -21,7 +21,7 @@ class ofApp : public ofBaseApp{
 		void setupCameras();
 		void setupViewports();
 
-		void updateCameraOffset();
+		void updatePerspective(int i);
 
 		void drawCameras();
 		void drawLabels();
@@ -52,7 +52,9 @@ class ofApp : public ofBaseApp{
 		ofTexture fisheye_texture_;
 
 		bool is_start_{ false };
-		float vol;
+		int deg, fov;
+		float nearclip, farclip, aspect;
+		float vol, OffsetScaleX, OffsetScaleZ;
 
 		//camera
 		ofEasyCam cam;

@@ -8,7 +8,9 @@ void ofApp::setup(){
     particles.setup();
     rotatesphere.setup();
 
-    vol = 100;
+    vol = 1000;
+    OffsetScaleX = 1 / vol;
+    OffsetScaleZ = 1 / vol;
 
     if (!initializeT265()) {
         return;
@@ -46,7 +48,11 @@ void ofApp::setupFrameworks() {
 
 //--------------------------------------------------------------
 void ofApp::setupCameras() {
-    int deg = 0;
+    deg = 0;
+    fov = 53;
+    nearclip = 10;
+    farclip = 2000;
+    aspect = 2. / 1.;
 
     axis.x = 0;
     axis.y = 1;
@@ -64,9 +70,8 @@ void ofApp::setupCameras() {
 
     for (size_t i = 1; i != N_CAMERAS; ++i) {
         cameras[i]->setPosition(0, 0, 0);
-        cameras[i]->setFov(53);
+        cameras[i]->setupPerspective(true, fov, nearclip, farclip, lensoffset);
         cameras[i]->rotateDeg(deg, axis);
-        cameras[i]->setLensOffset(lensoffset);
 
         deg -= 90;
     }
@@ -91,11 +96,27 @@ void ofApp::setupViewports() {
     }
 }
 
-void ofApp::updateCameraOffset() {
-    cameras[1]->setLensOffset(lensoffsetFront);
-    cameras[2]->setLensOffset(lensoffsetRight);
-    cameras[3]->setLensOffset(lensoffsetBack);
-    cameras[4]->setLensOffset(lensoffsetLeft);
+void ofApp::updatePerspective(int i) {
+    switch(i){
+    case 1:
+        cameras[i]->setLensOffset(lensoffsetFront);
+        cameras[i]->setFarClip(farclip + cameras[i]->getPosition().z);
+        break;
+    case 2:
+        cameras[i]->setLensOffset(lensoffsetRight);
+        cameras[i]->setFarClip(farclip - cameras[i]->getPosition().x);
+        break;
+    case 3:
+        cameras[i]->setLensOffset(lensoffsetBack);
+        cameras[i]->setFarClip(farclip - cameras[i]->getPosition().z);
+        break;
+    case 4:
+        cameras[i]->setLensOffset(lensoffsetLeft);
+        cameras[i]->setFarClip(farclip + cameras[i]->getPosition().x);
+        break;
+    default:
+        break;
+    }  
 }
 
 //--------------------------------------------------------------
@@ -301,12 +322,12 @@ void ofApp::translateCamByExtrinsics(int i) {
     // https://github.com/IntelRealSense/librealsense/blob/master/examples/ar-basic/coordinates.jpg
     cameras[i]->setPosition(-x2, y2, z2);
 
-    /*lensoffsetFront = { 0, 0 };
-    lensoffsetRight = { 0, 0 };
-    lensoffsetBack  = { 0, 0 };
-    lensoffsetLeft  = { 0, 0 };
+    lensoffsetFront = { OffsetScaleX *  x2, OffsetScaleZ * -y2 };
+    lensoffsetRight = { OffsetScaleX * -z2, OffsetScaleZ * -y2 };
+    lensoffsetBack  = { OffsetScaleX * -x2, OffsetScaleZ * -y2 };
+    lensoffsetLeft  = { OffsetScaleX *  z2, OffsetScaleZ * -y2 };
 
-    updateCameraOffset();*/
+    updatePerspective(i);
 }
 
 void ofApp::rotateCam(int i) {

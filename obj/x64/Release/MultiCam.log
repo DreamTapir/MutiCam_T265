@@ -1,4 +1,13 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: 中間ディレクトリ (obj\x64\Release\) に別のプロジェクト (MultiCam.vcxproj, Particles_MultiCam.vcxproj) と共有されているファイルが含まれています。これにより、クリーンしてリビルド動作が適切に行われない可能性があります。
+  ofApp.cpp
+C:\of_v0.11.0_vs2017_release\libs\openFrameworks\math\ofMatrix4x4.h(326,1): warning C4267: '引数': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\of_v0.11.0_vs2017_release\libs\openFrameworks\math\ofMatrix4x4.h(331,1): warning C4267: '引数': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\of_v0.11.0_vs2017_release\libs\openFrameworks\math\ofMatrix4x4.h(912,12): warning C4267: '引数': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\of_v0.11.0_vs2017_release\libs\openFrameworks\math\ofMatrix4x4.h(913,12): warning C4267: '引数': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\of_v0.11.0_vs2017_release\libs\openFrameworks\math\ofMatrix4x4.h(914,12): warning C4267: '引数': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\of_v0.11.0_vs2017_release\libs\openFrameworks\math\ofMatrix4x4.h(915,12): warning C4267: '引数': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+     ライブラリ bin\MultiCam_T265.lib とオブジェクト bin\MultiCam_T265.exp を作成中
+  LINK : /LTCG が指定されましたが、コードの生成は必要ありません。リンク コマンド ラインから /LTCG を削除し、リンカーの性能を改善してください。
   MultiCam.vcxproj -> C:\of_v0.11.0_vs2017_release\apps\myApps\MutiCam_T265\bin\MultiCam_T265.exe
   
   	                   2	C:\of_v0.11.0_vs2017_release\libs\fmodex\lib\vs\x64\
