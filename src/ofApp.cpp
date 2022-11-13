@@ -70,7 +70,7 @@ void ofApp::setupCameras() {
 
     for (size_t i = 1; i != N_CAMERAS; ++i) {
         cameras[i]->setPosition(0, 0, 0);
-        cameras[i]->setupPerspective(true, fov, nearclip, farclip, lensoffset);
+        cameras[i]->setupPerspective(false, fov, nearclip, farclip, lensoffset);
         cameras[i]->rotateDeg(deg, axis);
 
         deg -= 90;
